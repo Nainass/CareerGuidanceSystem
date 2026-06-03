@@ -5,7 +5,7 @@ from joblib import load
 st.title("AI Career Guidance System")
 
 model = load("career_model.pkl")
-target_encoder = joblib.load("target_encoder.pkl")
+target_encoder = load("target_encoder.pkl")
 
 st.header("Student Details")
 
