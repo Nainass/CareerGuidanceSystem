@@ -1,10 +1,10 @@
 import streamlit as st
 import pandas as pd
-import joblib
+from joblib import load
 
 st.title("AI Career Guidance System")
 
-model = joblib.load("career_model.pkl")
+model = load("career_model.pkl")
 target_encoder = joblib.load("target_encoder.pkl")
 
 st.header("Student Details")
